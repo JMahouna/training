@@ -4,31 +4,31 @@ from time import strftime
 
 # ******* My code to generate my own message ***********
 
-# print('your password')
+print('your password')
 
-# char='12&é34ùmp^$*!:ml:;!/.?/§ùmp^µ£_-wxc>><<dà)=+1234MAPEN?SNFUTIOOOCNJSK'
+char='12&é34ùmp^$*!:ml:;!/.?/§ùmp^µ£_-wxc>><<dà)=+1234MAPEN?SNFUTIOOOCNJSK'
 
-# password=''
+password=''
 
-# for x in range(16) :
-#     password+=random.choice(char)
+for x in range(16) :
+    password+=random.choice(char)
 
-# print(password)
+print(password)
 
 # ******** real-time clock GUI *********************
 
-myWindows = Tk() # initializing a windows
-myWindows.title('Real Time') 
+# myWindows = Tk() # initializing a windows
+# myWindows.title('Real Time') 
 
-def time():
-    mytime = strftime('%H:%M:%S %p')
-    clock.config(text = mytime)
-    clock.after(1000, time)
+# def time():
+#     mytime = strftime('%H:%M:%S %p')
+#     clock.config(text = mytime)
+#     clock.after(1000, time)
 
-clock = Label(myWindows, font = ('arial',40,'bold'),
-              background= 'dark green',foreground = 'white')
+# clock = Label(myWindows, font = ('arial',40,'bold'),
+#               background= 'dark green',foreground = 'white')
 
-clock.pack(anchor = 'center')
-time()
-mainloop()
+# clock.pack(anchor = 'center')
+# time()
+# mainloop()
 
